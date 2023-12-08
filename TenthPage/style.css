@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.main-container {
+    width: 100%;
+    color: #fff;
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(220deg,
+            Black 75%,
+            #d5000f 25%)
+}
+
+.navbar {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+}
+
+.main-container .navbar img {
+    height: 80px;
+    width: 130px;
+}
+
+.nav-link ul {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nav-link ul a {
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.login-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.login i {
+    background-color: #fff;
+    border-radius: 50%;
+    color: #d5000f;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -15px;
+    position: absolute;
+    font-size: 17px;
+    border: 1px solid #d5000f;
+}
+
+
+.login .login-link {
+    background-color: #d5000f;
+    color: #fff;
+    width: 90px;
+    border-radius: 1rem;
+    font-weight: 700;
+    padding: .3rem .5rem .3rem 1.7rem;
+    font-size: 13px;
+}
+
+/* Heading */
+.content {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.content .heading {
+    font-size: 35px;
+    font-family: 'Prata', serif;
+
+}
+
+.content .links-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 3rem auto;
+    width: 100%;
+    max-width: 300px;
+}
+
+.content .links-content a {
+    text-decoration: underline;
+    font-size: 16px;
+    color: #f1a30c;
+}
+
+/* social media icon */
+.social-media-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    right: 2rem;
+    bottom: 1rem;
+}
+
+.social-media-icons img {
+    width: 25px;
+    height: 25px;
+}
+
+.social-media-icons i {
+    font-size: 26px;
+}
+
+@media screen and (max-width: 768px) {
+    .heading h2 {
+        font-size: 25px;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    .login {
+        display: none;
+    }
+
+    .navbar {
+        padding: 1rem;
+    }
+}

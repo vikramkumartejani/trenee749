@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'GeorgiaPro-Bold', serif;
+
+}
+
+@font-face {
+    font-family: 'GeorgiaPro-Bold';
+    src: url('./GeorgiaPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.main-container {
+    width: 100%;
+    color: #fff;
+    position: relative;
+    height: 100vh;
+   background: linear-gradient(220deg,
+            Black 75%,
+            #d5000f 25%)
+}
+ 
+
+.navbar {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+}
+
+.main-container .navbar img {
+    height: 80px;
+    width: 130px;
+}
+
+.nav-link ul {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nav-link ul a {
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.login-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.login i {
+    background-color: #fff;
+    border-radius: 50%;
+    color: #d5000f;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -15px;
+    position: absolute;
+    font-size: 17px;
+    border: 1px solid #d5000f;
+}
+
+
+.login .login-link {
+    background-color: #d5000f;
+    color: #fff;
+    width: 90px;
+    border-radius: 1rem;
+    font-weight: 700;
+    padding: .3rem .5rem .3rem 1.7rem;
+    font-size: 13px;
+}
+
+/* menu  */
+.toggle-button {
+    display: none;
+}
+
+/* Subscribe Button */
+.subscribe-container {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.subscribe-container .sub-btn {
+    background: #d5000f;
+    color: #fff;
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.subscribe-container .sub-content {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 16px;
+}
+
+/* Social Media Icons */
+.social-media-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    right: 2rem;
+    bottom: 1rem;
+}
+
+.social-media-icons img {
+    width: 25px;
+    height: 25px;
+}
+
+.social-media-icons i {
+    font-size: 26px;
+}
+ 
+
+@media screen and (max-width: 768px) {
+    .login {
+        display: none;
+    }
+    .nav-link {
+        display: none;
+    }
+    .navbar {
+        padding: 1rem;
+    }
+
+    .toggle-button {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+    }
+ 
+}

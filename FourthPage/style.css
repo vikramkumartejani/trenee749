@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-container {
+    width: 100%;
+    color: #fff;
+    position: relative;
+    height: 100%;
+    background: linear-gradient(220deg,
+            Black 75%,
+            #d5000f 25%)
+}
+
+.navbar {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+
+}
+
+.navbar img {
+    height: 80px;
+    width: 130px;
+}
+
+.navbar .logo-second {
+    height: 120px;
+    width: 200px;
+}
+
+.login-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: -5.2rem;
+}
+
+.login-container i {
+    background-color: #fff;
+    border-radius: 50%;
+    color: #d5000f;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -15px;
+    position: absolute;
+    font-size: 17px;
+    border: 1px solid #d5000f;
+}
+
+.login-container .login-link {
+    background-color: #d5000f;
+    color: #fff;
+    width: 90px;
+    border-radius: 1rem;
+    height: 23px;
+    font-weight: 700;
+    padding: .3rem .5rem .3rem 1.7rem;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+/* content container */
+.contet-container {
+    padding: 2rem;
+    width: 100%;
+    max-width: 90%;
+}
+
+.heading-content {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.heading-content h1 {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Prata', serif;
+}
+
+.heading-content h5 {
+    color: #bb0a1d;
+}
+
+.group-of-addicts {
+    display: flex;
+    align-items: flex-end;
+    padding: 0rem 2rem 0 2rem;
+    gap: 2rem;
+}
+
+.group-of-addicts p {
+    max-width: 400px;
+    width: 100%;
+
+}
+
+/* Social Media Icons */
+.social-media-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    right: 2rem;
+    bottom: .5rem;
+}
+
+.social-media-icons img {
+    width: 25px;
+    height: 25px;
+}
+
+.social-media-icons i {
+    font-size: 26px;
+}
+
+@media screen and (max-width: 768px) {
+    .login-container {
+        margin-top: 0rem;
+    }
+
+    .navbar .logo-second {
+        display: none;
+    }
+
+    .navbar {
+        padding: 1rem;
+    }
+
+    .contet-container {
+        padding: 1rem;
+        max-width: 100%;
+    }
+
+    .group-of-addicts {
+        padding: 1rem 2rem 3rem 1rem;
+        flex-direction: column-reverse;
+        /* justify-content : center;    */
+        align-items: center;
+    }
+
+    .group-of-addicts p {
+        max-width: 100%;
+
+    }
+}
